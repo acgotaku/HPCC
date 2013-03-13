@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="HPCC.Master.Admin" %>
+<%@ Register src="../Module/Admin_Top.ascx" tagname="Admin_Top" tagprefix="uc1" %>
+<%@ Register src="../Module/Admin_left.ascx" tagname="Admin_left" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>  <uc1:Admin_Top ID="Admin_Top1" runat="server" />
+
+      
+         <uc2:Admin_left ID="Admin_left1" runat="server" />
+        
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         
+        </asp:ContentPlaceHolder>
+    </div>
+   
+    </form>
+</body>
+</html>
